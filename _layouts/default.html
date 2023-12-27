@@ -3,20 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | Your Site Name</title>
+    <title>{{ page.title }} | Archimedes AI Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #005f73;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        footer {
+            background: #001219;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+        main {
+            padding: 15px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            max-width: 1200px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Navigation bar here -->
+        <div class="container">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/research.html">Research</a>
+            <a href="/contact.html">Contact</a>
+        </div>
     </header>
 
-    <main>
+    <main class="container">
         {{ content }}
     </main>
 
     <footer>
-        <!-- Footer content here -->
+        <div class="container">
+            &copy; {{ 'now' | date: '%Y' }} Archimedes AI Research. All Rights Reserved.
+        </div>
     </footer>
 </body>
 </html>
