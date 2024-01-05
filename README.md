@@ -1,5 +1,5 @@
 # archimedesai.github.io
-Domain to upload all ArchimedesAI-related content
+Domain to upload all ArchimedesAI-related content (mainly for reading group-related content).
 
 **_layouts**: Templates for different page types (e.g., default.html, post.html). Basic HTML templates for site's content.
 
@@ -7,7 +7,7 @@ Domain to upload all ArchimedesAI-related content
 
 **_posts**: If there is a blog or news section, individual markdown files for each post go here. The file names follow a YEAR-MONTH-DAY-title.md format.
 
-**_data**: Store data files like navigation bars, easily managed in YAML, JSON, or CSV formats.
+**_data**: Store data files.
 
 **_sass**: Contains Sass partials (e.g., _variables.scss, _layout.scss) that can be imported into main stylesheet for easier management of CSS.
 
