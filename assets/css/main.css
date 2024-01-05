@@ -41,7 +41,7 @@ main {
     text-align: center;    
 }
 .image-container {
-    width: 18%;
+    width: auto;
     height:auto;
     display: inline-block;
     margin: 15px;
