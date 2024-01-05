@@ -30,25 +30,29 @@ main {
     margin: auto;
     max-width: 1200px;
 }
-@media (max-width: 600px) {
-    .container {
-        width: 95%;
+@media (max-width: 900px) {
+    .image-container {
+        width: 45%; /* Adjust for medium screens */
     }
 }
 
-.row {
-    clear: both;
-    text-align: center;    
+@media (max-width: 600px) {
+    .image-container {
+        width: 90%; /* Adjust for small screens */
+    }
 }
 .image-container {
-    width: auto;
-    height:auto;
+    width: 30%; /* Adjust the width to fit three in a row */
+    height: auto;
     display: inline-block;
     margin: 15px;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: hidden; /* This will ensure the images don't overflow their container */
 }
+
 .image-container img {
+    width: 90%; /* Make the image fill the container */
+    height: auto; /* Maintain the aspect ratio */
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 0px;
