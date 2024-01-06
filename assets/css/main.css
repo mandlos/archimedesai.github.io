@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    background: url(/_data/Archimedes_web_background.png) no-repeat center fixed;
+    background: url("https://github.com/mandlos/archimedesai.github.io/blob/main/_data/Archimedes_web_background.png?raw=true") no-repeat center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
