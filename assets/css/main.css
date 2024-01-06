@@ -46,6 +46,12 @@ main {
         width: 90%; /* Adjust for small screens */
     }
 }
+
+.row {
+    clear: both;
+    text-align: center; /* Centers the images in the row */
+  }
+
 .image-container {
     width: 30%; /* Adjust the width to fit three in a row */
     height: auto;
@@ -87,4 +93,36 @@ main {
     bottom: 0;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.01) 60%, rgb(255, 255, 255, 0.9) 90%);
     border-radius:60%;
+}
+
+.gradient-container {
+    display: inline-block;
+    width: 30%; /* Adjust as needed */
+    height: 30%; /* Adjust as needed */
+    position: relative;
+    vertical-align: middle;
+    margin:1%;
+    box-sizing: border-box;
+    background: radial-gradient(circle, rgb(0, 2, 101), rgba(0, 0, 0, 0.043)); /* Radial gradient from light blue to dark blue */
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: 100%; /* Adjust text size as needed */
+    border-radius: 15px 50px;
+}
+
+.gradient-container a {
+    color: white; /* Make link text white */
+    line-height: normal;
+    height: 30%;
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make the entire area clickable */
+}
+
+
+h2 {
+    position: relative;
+    text-align: center;
+    text-align-last: center;
+    vertical-align: middle;
+    height: 100%;
+    padding: 10%;
 }
