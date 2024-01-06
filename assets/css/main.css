@@ -6,7 +6,7 @@ body {
     background: url("https://github.com/mandlos/archimedesai.github.io/blob/main/_data/Archimedes_web_background.png?raw=true") no-repeat center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center center;   
 }
 header {
