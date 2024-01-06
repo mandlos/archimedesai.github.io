@@ -111,7 +111,7 @@ main {
     background: radial-gradient(circle, rgb(0, 2, 101), rgba(0, 0, 0, 0.043)); /* Radial gradient from light blue to dark blue */
     color: rgb(255, 255, 255); /* Text color */
     font-size: 100%; /* Adjust text size as needed */
-    vertical-align: top;
+    vertical-align: middle;
     box-sizing: border-box;
     text-align: center;
     border-radius: 15px 50px;
