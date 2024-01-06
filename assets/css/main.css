@@ -33,7 +33,7 @@ main {
     width: 80%;
     margin: auto;
     max-width: 1200px;
-    color: blue;
+    color: rgba(0, 0, 255, 0.304);
 }
 @media (max-width: 900px) {
     .image-container {
