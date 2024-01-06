@@ -6,11 +6,11 @@ body {
     background: url("https://github.com/mandlos/archimedesai.github.io/blob/main/_data/Archimedes_web_background.png?raw=true") no-repeat center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center center;   
 }
 header {
-    background: #0d0174;
+    background: #0d017453;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -21,8 +21,12 @@ header a {
     margin: 0 15px;
 }
 footer {
-    background: #001219;
-    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #0d017453;
+    color:rgb(255, 255, 255);
     text-align: center;
     padding: 15px 0;
 }
@@ -33,7 +37,7 @@ main {
     width: 80%;
     margin: auto;
     max-width: 1200px;
-    color: rgba(0, 0, 255, 0.304);
+    color: rgb(255, 255, 255);
 }
 @media (max-width: 900px) {
     .image-container {
