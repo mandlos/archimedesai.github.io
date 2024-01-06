@@ -2,11 +2,15 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    color: #ffffff;
+    background: url(/_data/Archimedes_web_background.png) no-repeat center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;   
 }
 header {
-    background: #005f73;
+    background: #0d0174;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -29,6 +33,7 @@ main {
     width: 80%;
     margin: auto;
     max-width: 1200px;
+    color: blueviolet;
 }
 @media (max-width: 900px) {
     .image-container {
@@ -48,12 +53,38 @@ main {
     margin: 15px;
     box-sizing: border-box;
     overflow: hidden; /* This will ensure the images don't overflow their container */
+    border-radius: 50%;
 }
 
 .image-container img {
     width: 90%; /* Make the image fill the container */
     height: auto; /* Maintain the aspect ratio */
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0px 0px;
+    border-radius: 20%;
+    box-shadow: none;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20%; /* If you want rounded corners */
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes any extra space below the image */
+    object-fit: cover;
+    border-radius:100%;
+}
+
+.image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.01) 60%, rgb(255, 255, 255, 0.9) 90%);
+    border-radius:60%;
 }
