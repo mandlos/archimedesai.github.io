@@ -99,7 +99,7 @@ main {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    align-items: last safe;
+    align-items: center;
     width: 30%; /* Adjust as needed */
     height: 30%; /* Adjust as needed */
     margin:1%;
