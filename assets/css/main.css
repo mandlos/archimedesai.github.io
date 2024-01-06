@@ -33,7 +33,7 @@ main {
     width: 80%;
     margin: auto;
     max-width: 1200px;
-    color: blueviolet;
+    color: blue;
 }
 @media (max-width: 900px) {
     .image-container {
@@ -96,23 +96,25 @@ main {
 }
 
 .gradient-container {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: last safe;
     width: 30%; /* Adjust as needed */
     height: 30%; /* Adjust as needed */
-    position: relative;
-    vertical-align: middle;
     margin:1%;
     box-sizing: border-box;
     background: radial-gradient(circle, rgb(0, 2, 101), rgba(0, 0, 0, 0.043)); /* Radial gradient from light blue to dark blue */
     color: rgb(255, 255, 255); /* Text color */
     font-size: 100%; /* Adjust text size as needed */
+    vertical-align: top;
+    box-sizing: border-box;
+    text-align: center;
     border-radius: 15px 50px;
 }
 
 .gradient-container a {
     color: white; /* Make link text white */
-    line-height: normal;
-    height: 30%;
     text-decoration: none; /* Remove underline from links */
     display: block; /* Make the entire area clickable */
 }
