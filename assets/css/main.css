@@ -51,24 +51,36 @@ main {
     }
 }
 
+.row-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
 .row {
+    position: static;
     clear: both;
     text-align: center; /* Centers the images in the row */
+    height: fit-content;
   }
 
-.image-container {
-    width: 30%; /* Adjust the width to fit three in a row */
+/* .image-container {
+    width: 30%;
     height: auto;
     display: inline-block;
     margin: 15px;
     box-sizing: border-box;
-    overflow: hidden; /* This will ensure the images don't overflow their container */
+    overflow: hidden;
     border-radius: 50%;
 }
 
 .image-container img {
-    width: 90%; /* Make the image fill the container */
-    height: auto; /* Maintain the aspect ratio */
+    width: 90%;
+    height: auto;
     object-fit: cover;
     border-radius: 20%;
     box-shadow: none;
@@ -77,13 +89,13 @@ main {
 .image-wrapper {
     position: relative;
     overflow: hidden;
-    border-radius: 20%; /* If you want rounded corners */
+    border-radius: 20%;
 }
 
 .image-wrapper img {
     width: 100%;
     height: auto;
-    display: block; /* Removes any extra space below the image */
+    display: block;
     object-fit: cover;
     border-radius:100%;
 }
@@ -97,16 +109,17 @@ main {
     bottom: 0;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.01) 60%, rgb(255, 255, 255, 0.9) 90%);
     border-radius:60%;
-}
+}  */
 
 .gradient-container {
+    position: static;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 30%; /* Adjust as needed */
-    height: 30%; /* Adjust as needed */
-    margin:1%;
+    height: 15vw; /* Adjust as needed */
+    margin:1vw;
     box-sizing: border-box;
     background: radial-gradient(circle, rgb(0, 2, 101), rgba(0, 0, 0, 0.043)); /* Radial gradient from light blue to dark blue */
     color: rgb(255, 255, 255); /* Text color */
@@ -118,17 +131,72 @@ main {
 }
 
 .gradient-container a {
+    position: static;
     color: white; /* Make link text white */
     text-decoration: none; /* Remove underline from links */
     display: block; /* Make the entire area clickable */
 }
 
-
 h2 {
-    position: relative;
+    position: static;
     text-align: center;
     text-align-last: center;
     vertical-align: middle;
     height: 100%;
     padding: 10%;
+    font-size: 2vw;
+}
+
+h1 {
+    position: static;
+    top: 0vw;
+    color: white;
+    align: center;
+    font-size: 3vw;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+}
+
+/* Medium screens */
+@media screen and (max-width: 1000px) {
+    h2 {
+        font-size: 4vw; /* Slightly larger on medium screens */
+    }
+    .gradient-container {
+        width: 100%; /* Each container takes up 100% width on small screens */
+        height: fit-content;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 2vw; /* Even larger on small screens */
+    }
+    .gradient-container {
+        width: 100%; /* Each container takes up 100% width on small screens */
+        height: fit-content;
+    }
+    .row-container {
+        width: fit-content;
+    }
+}
+
+/* Minimum font size */
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 1vw; /* A fixed minimum font size for very small screens */
+    }
+    .gradient-container {
+        width: 100%; /* Each container takes up 100% width on small screens */
+        height: fit-content;
+    }
+    .row-container {
+        width: fit-content;
+    }
 }
