@@ -34,9 +34,10 @@ main {
     padding: 15px;
 }
 .container {
-    width: 80%;
+    position: static;
+    width: 100%;
     margin: auto;
-    max-width: 1200px;
+    font-size: 3vw;
     color: rgb(255, 255, 255);
 }
 @media (max-width: 900px) {
