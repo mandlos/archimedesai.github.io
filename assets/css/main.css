@@ -177,7 +177,7 @@ h1 {
 /* Small screens */
 @media screen and (max-width: 600px) {
     h2 {
-        font-size: 2vw; /* Even larger on small screens */
+        font-size: 4vw; /* Even larger on small screens */
     }
     .gradient-container {
         width: 100%; /* Each container takes up 100% width on small screens */
@@ -191,7 +191,7 @@ h1 {
 /* Minimum font size */
 @media screen and (max-width: 400px) {
     h2 {
-        font-size: 1vw; /* A fixed minimum font size for very small screens */
+        font-size: 4vw; /* A fixed minimum font size for very small screens */
     }
     .gradient-container {
         width: 100%; /* Each container takes up 100% width on small screens */
