@@ -145,7 +145,7 @@ h2 {
     vertical-align: middle;
     height: 100%;
     padding: 10%;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 h1 {
@@ -153,7 +153,7 @@ h1 {
     top: 0vw;
     color: white;
     align: center;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .header-container {
