@@ -160,13 +160,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6vw;
+    height: 3vw;
 }
 
 /* Medium screens */
 @media screen and (max-width: 1000px) {
     h2 {
-        font-size: 4vw; /* Slightly larger on medium screens */
+        font-size: 2vw; /* Slightly larger on medium screens */
     }
     .gradient-container {
         width: 100%; /* Each container takes up 100% width on small screens */
@@ -177,7 +177,7 @@ h1 {
 /* Small screens */
 @media screen and (max-width: 600px) {
     h2 {
-        font-size: 4vw; /* Even larger on small screens */
+        font-size: 2vw; /* Even larger on small screens */
     }
     .gradient-container {
         width: 100%; /* Each container takes up 100% width on small screens */
@@ -191,7 +191,7 @@ h1 {
 /* Minimum font size */
 @media screen and (max-width: 400px) {
     h2 {
-        font-size: 4vw; /* A fixed minimum font size for very small screens */
+        font-size: 2vw; /* A fixed minimum font size for very small screens */
     }
     .gradient-container {
         width: 100%; /* Each container takes up 100% width on small screens */
