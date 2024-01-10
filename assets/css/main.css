@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #000000;
     background-color: #fff;
 }
 header {
@@ -56,6 +56,7 @@ main {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    vertical-align: middle;
 }
 
 .row {
@@ -63,50 +64,45 @@ main {
     clear: both;
     text-align: center; /* Centers the images in the row */
     height: fit-content;
+    
   }
 
-/* .image-container {
-    width: 30%;
-    height: auto;
+.image-container {
+    width: 20vw;
+    height:20vw;
     display: inline-block;
-    margin: 15px;
+    margin: 5px 5px;
     box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 50%;
+    overflow: visible;
+    border-radius: 15px 50px;
 }
 
 .image-container img {
-    width: 90%;
-    height: auto;
+    width: 16vw;
+    height: 20vw;
     object-fit: cover;
-    border-radius: 20%;
+    border-radius: 0%;
     box-shadow: none;
+    vertical-align: middle;
+    border-radius: 15px 50px;
 }
 
 .image-wrapper {
     position: relative;
-    overflow: hidden;
-    border-radius: 20%;
+    overflow: visible;
+    border-radius: 0%;
+    justify-content: center;
 }
 
-.image-wrapper img {
+/* .image-wrapper img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-    border-radius:100%;
+    border-radius:0%;
+    vertical-align: middle;
+ */
 }
-
-.image-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.01) 60%, rgb(255, 255, 255, 0.9) 90%);
-    border-radius:60%;
-}  */
 
 .gradient-container {
     position: static;
@@ -118,13 +114,13 @@ main {
     height: 15vw; /* Adjust as needed */
     margin:1vw;
     box-sizing: border-box;
-    background: radial-gradient(circle, rgb(0, 2, 101), rgba(0, 0, 0, 0.043)); /* Radial gradient from light blue to dark blue */
+    background: #19007b; /* Radial gradient from light blue to dark blue */
     color: rgb(255, 255, 255); /* Text color */
     font-size: 1vw; /* Adjust text size as needed */
     vertical-align: middle;
     box-sizing: border-box;
     text-align: center;
-    border-radius: 15px 50px;
+    border-radius: 15px 15px;
 }
 
 .gradient-container a {
@@ -147,7 +143,7 @@ h2 {
 h1 {
     position: static;
     top: 0vw;
-    color: white;
+    color: black;
     align: center;
     font-size: 2vw;
 }
