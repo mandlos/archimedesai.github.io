@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Archimedes AI Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="https://github.com/mandlos/archimedesai.github.io/blob/main/_data/Archimedes-favicon.png?raw=true">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" target="_self">Home</a>
+            <a href="https://www.archimedesai.gr/en/about" target="_blank">About</a>
+            <a href="https://www.archimedesai.gr/en/" target="_blank">Official site</a>
+            <a href="https://www.archimedesai.gr/en/contact" target="_blank">Contact</a>
+        </div>
+    </header>
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <footer>
+        <div class="container">
+            {{ 'now' | date: '%Y' }} Archimedes Research Unit.
+        </div>
+    </footer>
+</body>
+</html>
