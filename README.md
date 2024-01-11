@@ -9,3 +9,4 @@ Domain to upload all ArchimedesAI-related content (mainly for reading group-rela
 
 **_pages**: For additional pages like About, Contact, etc., separate from blog posts. Each page can be a markdown file with a layout defined in the front matter.
 
+Page is live @ (https://mandlos.github.io/archimedesai.github.io/)
