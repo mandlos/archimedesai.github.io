@@ -5,30 +5,91 @@ body {
     color: #000000;
     background-color: #fff;
 }
+
 header {
-    background: #2f5fce1e;
-    color: #000000;
-    padding: 10px 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff41;
+    color: hsl(0, 0%, 0%);
+    font-size: 1.4vw;
+    /* padding: 10px 0;
+    text-align: center;  
+    position: static; */
 }
+
 header a {
     color: #532323;
     text-decoration: none;
     margin: 0 15px;
 }
+
+hr {
+    border: 0;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, 
+    rgba(0, 0, 0, 0) 0%, 
+    rgba(0, 0, 0, 0) 25%, 
+    rgba(0, 0, 0, 1) 50%, 
+    rgba(0, 0, 0, 0) 75%, 
+    rgba(0, 0, 0, 0) 100%);
+}
+
 footer {
-    color: #000000;
+    background: #000000;
+    color: #ffffff;
+    font-size: 1.4vw;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #2f5fce1e;
     text-align: center;
     padding: 15px 0;
 }
+
 main {
-    padding: 15px;
+    padding: 0px;   
 }
+
+h1 {
+    position: static;
+    top: 0vw;
+    color: black;
+    align: center;
+    font-size: 2vw;
+}
+
+h2 {
+    position: static;
+    text-align: center;
+    text-align-last: center;
+    vertical-align: middle;
+    height: 100%;
+    padding: 10%;
+    font-size: 1vw;
+}
+
+.nav-logo_container {
+    flex: 0 0 auto; /* Do not grow, do not shrink, and base width on content */
+    padding-left: 10px; /* Padding instead of 'left' for spacing */
+}
+
+.nav-logo {
+    max-width: 100%; /* Example: restrict height */
+    height: auto;
+}
+
+
+.nav-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
 .container {
     position: static;
     width: 100%;
@@ -36,16 +97,13 @@ main {
     font-size: 1.5vw;
     color: rgb(0, 0, 0);
 }
-@media (max-width: 900px) {
-    .image-container {
-        width: 45%; /* Adjust for medium screens */
-    }
-}
 
-@media (max-width: 600px) {
-    .image-container {
-        width: 90%; /* Adjust for small screens */
-    }
+.title-container{
+    position: relative;
+    text-align: center;
+    text-align-last: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .row-container{
@@ -53,9 +111,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    margin: 0 0;
     vertical-align: middle;
 }
 
@@ -78,7 +134,7 @@ main {
 }
 
 .image-container img {
-    width: 16vw;
+    width: 18vw;
     height: 20vw;
     object-fit: cover;
     border-radius: 0%;
@@ -94,60 +150,6 @@ main {
     justify-content: center;
 }
 
-/* .image-wrapper img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius:0%;
-    vertical-align: middle;
- */
-}
-
-.gradient-container {
-    position: static;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 15vw; /* Adjust as needed */
-    height: 15vw; /* Adjust as needed */
-    margin:1vw;
-    box-sizing: border-box;
-    background: #19007b; /* Radial gradient from light blue to dark blue */
-    color: rgb(255, 255, 255); /* Text color */
-    font-size: 1vw; /* Adjust text size as needed */
-    vertical-align: middle;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 15px 15px;
-}
-
-.gradient-container a {
-    position: static;
-    color: white; /* Make link text white */
-    text-decoration: none; /* Remove underline from links */
-    display: block; /* Make the entire area clickable */
-}
-
-h2 {
-    position: static;
-    text-align: center;
-    text-align-last: center;
-    vertical-align: middle;
-    height: 100%;
-    padding: 10%;
-    font-size: 1vw;
-}
-
-h1 {
-    position: static;
-    top: 0vw;
-    color: black;
-    align: center;
-    font-size: 2vw;
-}
-
 .header-container {
     display: flex;
     justify-content: center;
@@ -160,20 +162,12 @@ h1 {
     h2 {
         font-size: 2vw; /* Slightly larger on medium screens */
     }
-    .gradient-container {
-        width: 100%; /* Each container takes up 100% width on small screens */
-        height: fit-content;
-    }
 }
 
 /* Small screens */
 @media screen and (max-width: 600px) {
     h2 {
         font-size: 2vw; /* Even larger on small screens */
-    }
-    .gradient-container {
-        width: 100%; /* Each container takes up 100% width on small screens */
-        height: fit-content;
     }
     .row-container {
         width: fit-content;
@@ -184,10 +178,6 @@ h1 {
 @media screen and (max-width: 400px) {
     h2 {
         font-size: 2vw; /* A fixed minimum font size for very small screens */
-    }
-    .gradient-container {
-        width: 100%; /* Each container takes up 100% width on small screens */
-        height: fit-content;
     }
     .row-container {
         width: fit-content;
