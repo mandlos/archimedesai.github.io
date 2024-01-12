@@ -1,40 +1,46 @@
----
-title: Home
-layout: default
----
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | Archimedes AI Research</title>
+    <title> Home | Archimedes AI Research</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/_assets/css/main.css">
-    <link rel="icon" type="image/x-icon" href="https://github.com/mandlos/archimedesai.github.io/blob/main/_data/Archimedes-favicon.png?raw=true">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/x-icon" href="https://github.com/mandlos/archimedesai.github.io/blob/main/data/Archimedes-favicon.png?raw=true">
 </head>
 <body>
+    <header>
+        <div class="nav-logo_container">
+            <img src="./data/Images/Archimedes_logo.png" alt="Archimedes RU logo" class="nav-logo">
+        </div>
+        <div class="nav-text">
+            <a href="index.html" target="_self">Home</a>
+            <a href="https://www.archimedesai.gr/en/" target="_blank">Official site</a>
+            <a href="https://www.archimedesai.gr/en/contact" target="_blank">Contact</a>
+        </div>
+    </header>
+    <hr>
+
     <main class="container">
         <div>
             <div class="title-container">
                 <h1>A page for the Reading Groups of Archimedes Research Unit</h1>
             </div>
             <div class="row-container">
-
                 <div class="row"> 
                     <div class="image-container image-wrapper">
                         <a href="_pages/Foundations.html" target="_blank">
-                            <img src="./_data/Images/ML_Foundations.png" alt="Machine learning Foundations">
+                            <img src="./data/Images/ML_Foundations.png" alt="Machine learning Foundations">
                         </a>
                     </div>
                     <div class="image-container image-wrapper">
                         <a href="_pages/Causality.html" target="_blank">
-                            <img src="./_data/Images/ML_Causality.png" alt="Causality and Fairness">
+                            <img src="./data/Images/ML_Causality.png" alt="Causality and Fairness">
                         </a>
                     </div>
                     <div class="image-container image-wrapper">
                         <a href="_pages/Game_Theory.html" target="_blank">
-                            <img src="./_data/Images/Game_Theory.png" alt="Game Theory, Optimization and Multi-Agent Learning">
+                            <img src="./data/Images/Game_Theory.png" alt="Game Theory, Optimization and Multi-Agent Learning">
                         </a>
                     </div>
                 </div>
@@ -42,22 +48,30 @@ layout: default
                 <div class="row">
                     <div class="image-container image-wrapper">
                         <a href="_pages/NLP.html" target="_blank">
-                            <img src="./_data/Images/ML_NLP.png" alt="Machine learning and Natural Language Processing">
+                            <img src="./data/Images/ML_NLP.png" alt="Machine learning and Natural Language Processing">
                         </a>
                     </div>
                     <div class="image-container image-wrapper">
                         <a href="_pages/Computer_Vision.html" target="_blank">
-                            <img src="./_data/Images/ML_CV.png" alt="Machine learning and Computer Vision">
+                            <img src="./data/Images/ML_CV.png" alt="Machine learning and Computer Vision">
                         </a>
                     </div>
                     <div class="image-container image-wrapper">
                         <a href="_pages/Life_Sciences.html" target="_blank">
-                            <img src="./_data/Images/ML_Life_Sciences.png" alt="Machine learning and Life Sciences">
+                            <img src="./data/Images/ML_Life_Sciences.png" alt="Machine learning and Life Sciences">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <br>
+    <br>
+    <footer>
+        <div>
+            {{ 'now' | date: '%Y' }} Archimedes Research Unit.
+        </div>
+    </footer>
+
 </body>
 </html>
